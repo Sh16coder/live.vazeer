@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VAZEER CLASSES LIVE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="mainContent" style="display:none;">
+        <header>
+            <h1>VAZEER CLASSES LIVE</h1>
+        </header>
+        
+        <div class="video-container">
+            <iframe id="liveVideo" width="100%" height="400" src="https://www.youtube.com/embed/Z6o_Zm8UBMI" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="comments-container">
+            <h2>Comments</h2>
+            <p>
+                <a href="https://www.youtube.com/watch?v=Z6o_Zm8UBMI#comments" target="_blank">View Comments on YouTube</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="passwordPrompt">
+        <h2>Please enter the password to access the live stream:</h2>
+        <input type="password" id="passwordInput" placeholder="Password" />
+        <button id="submitPassword">Submit</button>
+        <p id="errorMessage" style="color: red; display: none;"></p>
+    </div>
+
+    <!-- Pop-up Section -->
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Live Stream Ended</h2>
+            <p>If you have any doubts, please submit them on Telegram:</p>
+            <a href="https://t.me/YOUR_TELEGRAM_GROUP_LINK" target="_blank">Join Telegram Group</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
